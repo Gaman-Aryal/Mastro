@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mastro">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".drawer_Item.my_profile.tabs.TabsManager"></activity>
+        <activity android:name=".message.Conversation" />
+        <activity android:name=".home.matrimony.MHome" />
+        <activity android:name=".message.Inbox" />
+        <activity android:name=".drawer_Item.NotificationAndSound" />
+        <activity android:name=".drawer_Item.my_acc.MyAccount" />
+        <activity android:name=".drawer_Item.my_acc.MyAccountTasks" />
+        <activity android:name=".drawer_Item.Premium" />
+        <activity android:name=".nav_Item.view_profile.ViewProfile" />
+        <activity android:name=".home.date.DHome" />
+        <activity android:name=".nav_Item.date.DTrending" />
+        <activity android:name=".drawer_Item.my_profile.MyProfile" />
+        <activity android:name=".registration_verification.matrimony.MRegistration" />
+        <activity android:name=".registration_verification.Verification" />
+        <activity android:name=".registration_verification.date.DRegistration" />
+        <activity android:name=".login.Login" />
+        <activity android:name=".splash.Landing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

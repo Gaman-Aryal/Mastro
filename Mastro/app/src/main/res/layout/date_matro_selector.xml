@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".registration_verification.date.DRegistration">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/d"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/d_m_selector_btn_shape"
+            android:onClick="date"
+            android:layout_marginBottom="50dp"
+            android:text="@string/Date"
+            android:elevation="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_below="@id/d"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/d_m_selector_btn_shape"
+            android:onClick="Matrimony"
+            android:elevation="10dp"
+            android:text="@string/matrimony"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+
+            />
+</RelativeLayout>

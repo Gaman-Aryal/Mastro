@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9FBCD6</color>
+    <color name="colorPrimaryDark">#4998C8</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="light_blue">#74BBF4</color>
+    <color name="primaryTextColor">#11CFC5</color>
+    <color name="red">#ff0000</color>
+    <color name="colorGreenLight">#abffc0</color>
+    <color name="green">#0CA80C</color>
+    <color name="yellow">#ffff00</color>
+    <color name="amber">#FFC200</color>
+    <color name="primary">#4CAF50</color>
+    <color name="app_background">#CA2EB0</color>
+    <color name="blue_selected">#2196F3</color>
+    <color name="themeColor">#00e500</color>
+    <color name="grey">#4f4f4f</color>
+    <color name="orange">#FF7F00</color>
+    <color name="colorMessage">#008577</color>
+    <color name="like_color">#0C49B3</color>
+    <color name="match_color">#1A7A05</color>
+    <color name="like_req_color">#B80505</color>
+    <color name="blue">#0000FF</color>
+    <color name="purple">#C104D6</color>
+    <color name="abc">#00CCFF</color>
+</resources>

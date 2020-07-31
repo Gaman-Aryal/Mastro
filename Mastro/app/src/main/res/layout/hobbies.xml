@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/viewProfileBox">
+
+    <TextView
+        style="@style/viewProfileTitle"
+        android:text="@string/hobby_habit" />
+
+    <LinearLayout
+        style="@style/viewProfileInnerBox"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/viewProfileInnerTitle"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:text="@string/i_am"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/mPCharacter"
+            style="@style/myProfileData"
+            android:gravity="center_horizontal"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/viewProfileInnerBox">
+
+        <TextView
+            style="@style/viewProfileInnerTitle"
+            android:text="@string/drink" />
+
+        <EditText
+            android:id="@+id/mPDrink"
+            style="@style/myProfileData" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/viewProfileInnerBox">
+
+        <TextView
+            style="@style/viewProfileInnerTitle"
+            android:text="@string/smoke" />
+
+        <EditText
+            android:id="@+id/mPSmoke"
+            style="@style/myProfileData" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/viewProfileInnerBox">
+
+        <TextView
+            style="@style/viewProfileInnerTitle"
+            android:text="@string/travel" />
+
+        <EditText
+            android:id="@+id/mPTravel"
+            style="@style/myProfileData" />
+    </LinearLayout>
+
+</LinearLayout>

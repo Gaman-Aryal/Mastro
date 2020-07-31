@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".message.Inbox">
+
+    <include layout="@layout/back_withbox"
+        android:id="@+id/inboxBack"/>
+
+    <RelativeLayout
+        android:id="@+id/searchbox"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:padding="10dp"
+        android:layout_below="@+id/inboxBack"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/cancelSearch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_close"
+            android:visibility="gone"
+            android:tint="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/iSearch"
+            style="@style/Widget.AppCompat.SearchView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/cancelSearch"
+            android:layout_toStartOf="@id/iSearchIcon"
+            android:background="@android:color/white"
+            android:hint="@string/search"
+            android:paddingStart="10dp"
+            android:textSize="16sp"
+            tools:ignore="RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/iSearchIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@drawable/ic_search" />
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/active"
+        layout="@layout/single_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchbox" />
+
+    <include
+        layout="@layout/single_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/active" />
+</RelativeLayout>

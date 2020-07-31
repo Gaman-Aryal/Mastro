@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".drawer_Item.my_acc.MyAccountTasks">
+
+    <include layout="@layout/back_withbox"
+        android:id="@id/top"/>
+
+    <TextView
+        android:id="@+id/block_stat"
+        android:layout_below="@id/top"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/block_stat"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/block_stat"
+        android:background="@drawable/normal_border"
+        android:layout_margin="13dp">
+
+        <androidx.appcompat.widget.AppCompatCheckedTextView
+            android:id="@+id/add_user_to_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="13dp"
+            android:onClick="blockUser"
+            android:text="@string/add_user_to_block"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <include
+            layout="@layout/single_blocked_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_user_to_block" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

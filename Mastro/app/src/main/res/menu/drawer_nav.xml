@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/switch_acc"
+        android:icon="@drawable/ic_switch_acc"
+        android:title="@string/switch_acc" />
+
+    <item android:title="@string/setting">
+        <menu>
+            <item
+                android:id="@+id/account"
+                android:icon="@drawable/ic_account"
+                android:title="@string/my_acc" />
+            <item
+                android:id="@+id/n_and_s"
+                android:icon="@drawable/ic_notifi_sound"
+                android:title="@string/notification_sound" />
+        </menu>
+    </item>
+
+    <item android:title="@string/feature">
+        <menu>
+            <item
+                android:id="@+id/premium"
+                android:icon="@drawable/ic_premium"
+                android:title="@string/premium" />
+        </menu>
+    </item>
+
+    <item android:title="@string/help">
+        <menu>
+            <item
+                android:id="@+id/tutorial"
+                android:icon="@drawable/ic_tut"
+                android:title="@string/tut" />
+            <item
+                android:id="@+id/report"
+                android:icon="@drawable/ic_report"
+                android:title="@string/report" />
+            <item
+                android:id="@+id/terms"
+                android:icon="@drawable/ic_terms"
+                android:title="@string/terms" />
+        </menu>
+    </item>
+
+    <item android:title="@string/logout">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+</menu>

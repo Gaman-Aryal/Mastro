@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mHomeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layoutDirection="ltr"
+    tools:context=".home.matrimony.MHome">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="ltr">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mHomeToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@android:color/white"
+            android:layoutDirection="ltr">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="ltr">
+
+                <TextView
+                    android:id="@+id/mAppName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/app_name"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap"
+                    tools:targetApi="m" />
+
+                <ImageView
+                    android:id="@+id/mDrawerer"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="top"
+                    android:onClick="openDrawer"
+                    android:src="@drawable/ic_drawer_opener" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toStartOf="@+id/mDrawerer"
+                    android:gravity="center_vertical"
+                    android:onClick="openInbox"
+                    android:src="@drawable/ic_inbox"
+                    tools:ignore="UnknownIdInLayout" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/mNav"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_below="@id/mHomeToolbar"
+            android:alpha="1.0"
+            android:background="@drawable/nav_design"
+            android:fitsSystemWindows="true"
+            android:layoutDirection="ltr"
+            app:elevation="1dp"
+            app:itemIconSize="25dp"
+            app:itemIconTint="@color/d_nav_icon_color"
+            app:itemTextColor="@color/d_nav_text_color"
+            app:menu="@menu/m_nav">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <FrameLayout
+            android:id="@+id/mFragContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mHomeToolbar"
+            android:layoutDirection="ltr" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/mDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:fitsSystemWindows="true"
+        android:layoutDirection="ltr"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_nav"
+        tools:ignore="RtlHardcoded">
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

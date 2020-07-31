@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/back"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/convset1"
+                style="@style/convSettingLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/active_status"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/convActiveStatusSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:checked="true"
+                    android:onClick="changeActiveStatusForParticular"
+                    android:thumb="@drawable/thumb1"
+                    app:track="@drawable/track1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/convset2"
+                style="@style/convSettingLayout"
+                android:layout_below="@+id/convset1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/notification"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/convNotificationSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:checked="true"
+                    android:onClick="changeNotificationStatusForParticular"
+                    android:thumb="@drawable/thumb1"
+                    app:track="@drawable/track1" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/convset3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/white"
+                android:padding="13dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/want_call"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    tools:ignore="RelativeOverlap" />
+
+                <TextView
+                    android:id="@+id/convWantCallResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/convWantCall"
+                    android:onClick="changeWantCall"
+                    android:textSize="15sp"
+                    tools:ignore="RelativeOverlap" />
+
+                <ImageView
+                    android:id="@+id/convWantCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:onClick="changeWantCall"
+                    android:src="@drawable/ic_drop_down" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/convset4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20sp"
+                android:background="#FDFCFC"
+                android:orientation="vertical"
+                android:padding="13dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/set_nickname"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    tools:ignore="RtlSymmetry">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/convSetMyPicture"
+                        style="@style/convNicknamePhoto" />
+
+                    <EditText
+                        android:id="@+id/convSetMyName"
+                        style="@style/convNickname"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        tools:ignore="LabelFor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    tools:ignore="RtlSymmetry">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/convSetPicture"
+                        style="@style/convNicknamePhoto" />
+
+                    <EditText
+                        android:id="@+id/convSetName"
+                        style="@style/convNickname"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        tools:ignore="LabelFor" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/white"
+                android:onClick="deleteConv"
+                android:padding="10dp"
+                android:text="@string/del_conv"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/white"
+                android:onClick="unMatch"
+                android:padding="10dp"
+                android:text="@string/unmatch"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/white"
+                android:onClick="block"
+                android:padding="10dp"
+                android:text="@string/block"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/white"
+                android:onClick="report"
+                android:padding="10dp"
+                android:text="@string/report"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:onClick="closeConvSet"
+        android:padding="10dp"
+        android:src="@drawable/ic_slide_back"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/mSetTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:text="@string/msg_setting"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
+
+

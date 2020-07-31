@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".drawer_Item.my_acc.MyAccountTasks">
+
+    <include layout="@layout/back_withbox" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="13dp">
+
+        <TextView
+            android:id="@+id/instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20sp"
+            android:text="@string/ch_email_phone_instruction"
+            android:textColor="#3D9EEC"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailChange"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/instruction"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:layout_marginBottom="13dp"
+            app:boxCornerRadiusBottomEnd="14dp"
+            app:boxCornerRadiusBottomStart="14dp"
+            app:boxCornerRadiusTopEnd="14dp"
+            app:boxCornerRadiusTopStart="14dp">
+
+            <EditText
+                android:id="@+id/currentEmailOrPhone"
+                style="@style/modifiedEditText"
+                android:autofillHints=""
+                android:background="@null"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="8dp"
+                android:hint="@string/email_phone"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                tools:ignore="RtlSymmetry,TextFields" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/enterPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailChange"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:layout_marginBottom="40dp"
+            app:boxCornerRadiusBottomEnd="14dp"
+            app:boxCornerRadiusBottomStart="14dp"
+            app:boxCornerRadiusTopEnd="14dp"
+            app:boxCornerRadiusTopStart="14dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/current_pass"
+                style="@style/modifiedEditText"
+                android:autofillHints=""
+                android:background="@null"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="8dp"
+                android:hint="@string/current_pass"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                tools:ignore="RtlSymmetry" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/enterPassword"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/update_btn"
+            android:onClick="updateEmailOrPhone"
+            android:text="@string/ch"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+</RelativeLayout>

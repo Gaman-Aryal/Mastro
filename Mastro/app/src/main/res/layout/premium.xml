@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".drawer_Item.Premium">
+
+    <include
+        layout="@layout/back_withbox"
+        android:id="@+id/notifTop"/>
+
+    <ScrollView
+        android:layout_below="@id/notifTop"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            tools:targetApi="p">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/m_premium"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/premium_btn"
+                android:text="@string/matrimony_premium"
+                android:textStyle="italic"
+                android:onClick="registerForMatrimony"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/m_premium_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="@string/matrimony_premium_desc"
+                android:textSize="15sp" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/d_premium"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/premium_btn"
+                android:text="@string/date_premium"
+                android:textStyle="italic"
+                android:onClick="boostDateProfile"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/date_premium_desc"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

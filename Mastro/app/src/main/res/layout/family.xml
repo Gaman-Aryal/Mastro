@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/viewProfileBox">
+
+    <TextView
+        style="@style/viewProfileTitle"
+        android:text="@string/family" />
+
+    <LinearLayout style="@style/viewProfileInnerBox">
+
+        <TextView
+            style="@style/viewProfileInnerTitle"
+            android:text="@string/religion" />
+
+        <EditText
+            android:id="@+id/mPReligion"
+            style="@style/myProfileData" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/viewProfileInnerBox">
+
+        <TextView
+            style="@style/viewProfileInnerTitle"
+            android:text="@string/family_type" />
+
+        <EditText
+            android:id="@+id/mPFamilyType"
+            style="@style/myProfileData" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/viewProfileInnerBox">
+
+        <TextView
+            style="@style/viewProfileInnerTitle"
+            android:text="@string/Family_Status" />
+
+        <EditText
+            android:id="@+id/mPFamilyStatus"
+            style="@style/myProfileData" />
+    </LinearLayout>
+
+</LinearLayout>

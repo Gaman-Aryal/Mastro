@@ -1,0 +1,389 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="statusBarBackground">@drawable/profile_gradient</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="viewParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextInputLayout">
+        <item name="android:topLeftRadius">14dp</item>
+        <item name="android:bottomLeftRadius">14dp</item>
+        <item name="android:topRightRadius">14dp</item>
+        <item name="android:bottomRightRadius">14dp</item>
+    </style>
+
+    <style name="parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="modifiedEditText" parent="parent">
+        <item name="android:padding">9dp</item>
+        <item name="android:colorPrimary">@android:color/white</item>
+        <item name="android:textSize">@dimen/newsMoreTextSize</item>
+    </style>
+
+    <style name="viewParent.headerText">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="viewParent.headerText.NoMode">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="loginButton" parent="viewParent">
+        <item name="android:background">@drawable/update_btn</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="roundEditText" parent="viewParent">
+        <item name="android:background">@drawable/circular_button</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="radius">
+        <item name="android:topRightRadius">14dp</item>
+        <item name="android:bottomRightRadius">14dp</item>
+        <item name="android:bottomLeftRadius">14dp</item>
+        <item name="android:topLeftRadius">14dp</item>
+    </style>
+
+    <style name="UserDialog" parent="android:style/Theme.Dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowTitleStyle">@style/NewDialogTitle</item>
+    </style>
+
+    <style name="NewDialogTitle" parent="@android:style/TextAppearance.DialogWindowTitle">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@color/primary</item>
+        <item name="android:textColor">@color/blue_selected</item>
+        <item name="colorPrimary">@color/app_background</item>
+    </style>
+
+    <style name="LowerLinearLayout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">2sp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="UpperLinearLayout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ViewProfileUpperTextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingTop">10sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ViewProfileLowerTextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="editTextOTP">
+        <item name="android:gravity">center</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="background">@android:color/transparent</item>
+        <item name="android:drawableBottom">@drawable/line</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textColor">@color/colorMessage</item>
+        <item name="android:textColorHighlight">@color/colorMessage</item>
+        <item name="android:textColorLink">@color/colorMessage</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="textViewProfile">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:rotation">180</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/ic_back</item>
+        <item name="tint">@android:color/black</item>
+    </style>
+
+    <style name="RelativeLayout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">0.5dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="RelativeLayoutAbove">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="background">@drawable/line</item>
+        <item name="android:layout_marginTop">0.5dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="TextViewData">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="paddingStart">8dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">#555454</item>
+    </style>
+
+    <style name="ProfileEditText">
+        <item name="paddingStart">8dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">#555454</item>
+    </style>
+
+    <style name="viewProfileTitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginBottom">7dp</item>
+    </style>
+
+    <style name="viewProfileData">
+        <item name="android:layout_height">40sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+    </style>
+
+    <style name="viewProfileBox">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">13dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/viewprofileblockdesign</item>
+    </style>
+
+    <style name="viewProfileInnerBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@drawable/underline</item>
+    </style>
+
+    <style name="viewProfileInnerTitle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="textBelowName">
+        <item name="android:textColor">?android:attr/colorControlNormal</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">15dp</item>
+    </style>
+
+    <style name="circularbtn">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@drawable/circular_button</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="changePassword">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="paddingStart">10dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:drawableStart">@drawable/ic_lock</item>
+        <item name="android:drawablePadding">3dp</item>
+    </style>
+
+    <style name="conversationHeadIcons">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:tint">@android:color/white</item>
+    </style>
+
+    <style name="conversationTailIcons">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:tint">@android:color/white</item>
+    </style>
+
+    <style name="convSettingLayout">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">11dp</item>
+        <item name="android:paddingRight">11dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="convNicknamePhoto">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="convNickname">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="myProfileLike">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="myProfileBtnStyle">
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/my_profile_btn_design</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="myProfileData">
+        <item name="android:layout_height">40sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <string-array name="religion">
+        <item>Hinduism</item>
+        <item>Christianity</item>
+        <item>Muslim</item>
+        <item>Buddhism</item>
+        <item>Islam</item>
+        <item>Kirat</item>
+        <item>Bon</item>
+        <item>Jainism</item>
+        <item>Sikhism</item>
+    </string-array>
+
+    <string-array name="Creator">
+        <item>Self</item>
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Sister</item>
+        <item>Brother</item>
+        <item>Friend</item>
+    </string-array>
+
+    <string-array name="HealthCondition">
+        <item>Normal</item>
+        <item>Physically Challenged</item>
+    </string-array>
+
+    <string-array name="Jobs">
+        <item>Doctor</item>
+        <item>Teacher</item>
+        <item>Manager</item>
+        <item>Vehicle Mechanic</item>
+        <item>Artist</item>
+        <item>Singer</item>
+    </string-array>
+
+    <string-array name="Height">
+        <item>Below 4</item>
+        <item>4.1</item>
+        <item>4.2</item>
+        <item>4.3</item>
+        <item>4.4</item>
+        <item>4.5</item>
+        <item>4.6</item>
+        <item>4.7</item>
+        <item>4.8</item>
+        <item>4.9</item>
+        <item>4.10</item>
+        <item>4.11</item>
+        <item>5.1</item>
+        <item>5.2</item>
+        <item>5.3</item>
+        <item>5.4</item>
+        <item>5.5</item>
+        <item>5.6</item>
+        <item>5.7</item>
+        <item>5.8</item>
+        <item>5.9</item>
+        <item>5.10</item>
+        <item>5.11</item>
+        <item>6.1</item>
+        <item>6.2</item>
+        <item>6.3</item>
+        <item>6.4</item>
+        <item>6.5</item>
+        <item>6.6</item>
+        <item>6.7</item>
+        <item>6.8</item>
+        <item>6.9</item>
+        <item>6.10</item>
+        <item>6.11</item>
+        <item>Above 7</item>
+    </string-array>
+
+    <string-array name="FamilyStatus">
+        <item>Middle Class</item>
+        <item>Upper Class</item>
+        <item>First Class</item>
+    </string-array>
+
+</resources>

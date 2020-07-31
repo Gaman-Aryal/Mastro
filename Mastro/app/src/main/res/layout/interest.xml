@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/viewProfileBox">
+
+    <TextView
+        style="@style/viewProfileTitle"
+        android:text="@string/interest" />
+
+    <LinearLayout style="@style/viewProfileInnerBox">
+
+        <TextView
+            style="@style/viewProfileInnerTitle"
+            android:text="@string/sport" />
+
+        <EditText
+            android:id="@+id/mPSport"
+            style="@style/myProfileData" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/viewProfileInnerBox">
+
+        <TextView
+            style="@style/viewProfileInnerTitle"
+            android:text="@string/Music_Genre" />
+
+        <EditText
+            android:id="@+id/mPMusic"
+            style="@style/myProfileData" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/viewProfileInnerBox">
+
+        <TextView
+            style="@style/viewProfileInnerTitle"
+            android:text="@string/food" />
+
+        <EditText
+            android:id="@+id/mPFood"
+            style="@style/myProfileData" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/viewProfileInnerBox">
+
+        <TextView
+            style="@style/viewProfileInnerTitle"
+            android:text="@string/movies" />
+
+        <EditText
+            android:id="@+id/mPMovies"
+            style="@style/myProfileData" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/viewProfileInnerBox">
+
+        <TextView
+            style="@style/viewProfileInnerTitle"
+            android:text="@string/series" />
+
+        <EditText
+            android:id="@+id/mPSeries"
+            style="@style/myProfileData" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/viewProfileInnerBox">
+
+        <TextView
+            style="@style/viewProfileInnerTitle"
+            android:text="@string/tvshow" />
+
+        <EditText
+            android:id="@+id/mPTVShow"
+            style="@style/myProfileData" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/viewProfileInnerBox">
+
+        <TextView
+            style="@style/viewProfileInnerTitle"
+            android:text="@string/color" />
+
+        <EditText
+            android:id="@+id/mPColor"
+            style="@style/myProfileData" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/notifPhoto"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp" />
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/notifPhoto"
+        android:paddingStart="10dp"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:id="@+id/notifContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:textSize="17sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/notifTimeInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notifContent"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="5dp"
+            android:textSize="12sp"
+            tools:ignore="RtlSymmetry" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

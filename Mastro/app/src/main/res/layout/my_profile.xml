@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".drawer_Item.my_profile.MyProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="40sp">
+
+            <RelativeLayout
+                android:id="@+id/up"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/my_profile_layout">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/mProfilePicture"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40sp" />
+
+                <ImageView
+                    android:id="@+id/premiumUser"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_above="@id/mProfilePicture"
+                    android:layout_marginStart="-50dp"
+                    android:layout_marginBottom="-57dp"
+                    android:layout_toEndOf="@id/mProfilePicture"
+                    android:rotation="28" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/mProfilePicture"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-20dp"
+                    android:onClick="showphotoOptions"
+                    android:src="@drawable/ic_edit" />
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="30sp"
+                android:layout_marginTop="-40sp"
+                android:layout_marginRight="30sp"
+                android:background="@drawable/table_corner"
+                android:onClick="openLists"
+                android:padding="10dp">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/myProfileLike"
+                        android:text="@string/likes"
+                        android:textColor="@color/like_color" />
+
+                    <TextView
+                        style="@style/myProfileLike"
+                        android:text="@string/matches"
+                        android:textColor="@color/match_color" />
+
+                    <TextView
+                        style="@style/myProfileLike"
+                        android:text="@string/likes_req"
+                        android:textColor="@color/like_req_color" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/dMPlikesCount"
+                        style="@style/myProfileLike"
+                        android:textColor="@color/like_color" />
+
+                    <TextView
+                        android:id="@+id/dMPMatchCount"
+                        style="@style/myProfileLike"
+                        android:textColor="@color/match_color" />
+
+                    <TextView
+                        android:id="@+id/dMPRequestCount"
+                        style="@style/myProfileLike"
+                        android:textColor="@color/like_req_color" />
+
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                tools:ignore="RtlSymmetry">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/mPName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:minWidth="10dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap" />
+
+                    <EditText
+                        android:id="@+id/mPAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:minWidth="10dp"
+                        android:paddingStart="15sp"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_education" />
+
+                    <EditText
+                        android:id="@+id/mPCollege"
+                        style="@style/textBelowName"
+                        android:autofillHints=""
+                        android:background="@null"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:minWidth="10dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/viewProfileBox">
+
+                <TextView
+                    style="@style/viewProfileTitle"
+                    android:text="@string/bio" />
+
+                <EditText
+                    android:id="@+id/mPBio"
+                    style="@style/viewProfileData"
+                    android:background="@null"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10sp"
+                android:padding="13dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn1"
+                    style="@style/myProfileBtnStyle"
+                    android:text="@string/about" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn2"
+                    style="@style/myProfileBtnStyle"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/family" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn3"
+                    style="@style/myProfileBtnStyle"
+                    android:layout_below="@id/btn1"
+                    android:text="@string/interest" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn4"
+                    style="@style/myProfileBtnStyle"
+                    android:layout_below="@id/btn2"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/hobby_habit" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn5"
+                    style="@style/myProfileBtnStyle"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/btn3"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/preference" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/aboutLayout"
+                layout="@layout/about"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/familyLayout"
+                layout="@layout/family"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/interestLayout"
+                layout="@layout/interest"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/hobbiesLayout"
+                layout="@layout/hobbies"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/preferenceLayout"
+                layout="@layout/preference"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/only_back" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentEnd="true"
+        android:alpha="10"
+        android:onClick="editDone"
+        android:padding="10dp"
+        tools:ignore="RelativeOverlap">
+
+        <ImageView
+            android:id="@+id/done1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_done" />
+
+        <TextView
+            android:id="@+id/done2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/done1"
+            android:paddingStart="5dp"
+            android:text="@string/done"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/skip"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/skip_button"
+        android:text="@string/skip" />
+</RelativeLayout>
