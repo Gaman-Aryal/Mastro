@@ -23,9 +23,9 @@
         <activity android:name=".home.date.DHome" />
         <activity android:name=".nav_Item.date.DTrending" />
         <activity android:name=".drawer_Item.my_profile.MyProfile" />
-        <activity android:name=".registration_verification.matrimony.MRegistration" />
-        <activity android:name=".registration_verification.Verification" />
-        <activity android:name=".registration_verification.date.DRegistration" />
+        <activity android:name=".registration_verification.FinalRegistration" />
+        <activity android:name=".registration_verification.MiddlePhase" />
+        <activity android:name=".registration_verification.InitialPhase" />
         <activity android:name=".login.Login" />
         <activity android:name=".splash.Landing">
             <intent-filter>

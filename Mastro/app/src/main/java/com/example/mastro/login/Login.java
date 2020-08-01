@@ -9,8 +9,7 @@ import android.widget.EditText;
 
 import com.example.mastro.home.date.DHome;
 import com.example.mastro.R;
-import com.example.mastro.message.Inbox;
-import com.example.mastro.registration_verification.date.DRegistration;
+import com.example.mastro.registration_verification.InitialPhase;
 
 public class Login extends AppCompatActivity {
 
@@ -30,7 +29,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void newRegistration(View view) {
-        startActivity(new Intent(Login.this, DRegistration.class));
+        startActivity(new Intent(Login.this, InitialPhase.class));
     }
 
     public void loginBtn(View view) {

@@ -56,7 +56,7 @@
                     android:autofillHints=""
                     android:drawableStart="@drawable/ic_email"
                     android:drawablePadding="8dp"
-                    android:hint="@string/login_email_hint"
+                    android:hint="@string/email_phone"
                     android:inputType="textEmailAddress|phone"
                     android:maxLines="1"
                     tools:ignore="RtlSymmetry" />

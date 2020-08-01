@@ -1,4 +1,4 @@
-package com.example.mastro.registration_verification.matrimony;
+package com.example.mastro.registration_verification;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,11 +13,10 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 
-import com.example.mastro.registration_verification.Verification;
 import com.example.mastro.R;
 import com.google.android.material.textfield.TextInputLayout;
 
-public class MRegistration extends AppCompatActivity {
+public class FinalRegistration extends AppCompatActivity {
     AutoCompleteTextView ProfileCreator, MatrimonyPhysicalHealthCondition, matrimonyJobDetail, MatrimonyHeightDetail, MatrimonyFamilyStatus, MatrimonyReligion;
     RadioGroup radio_btn;
     TextInputLayout Bridename;
@@ -58,7 +57,7 @@ public class MRegistration extends AppCompatActivity {
 //                int month = calendar.get(Calendar.MONTH);
 //                int year = calendar.get(Calendar.YEAR);
 //                // date picker dialog
-//                DatePickerDialog dialog = new DatePickerDialog(MRegistration.this,android.R.style.Theme_Holo_Light_Dialog_MinWidth,mDateSetListener,year,month,day);
+//                DatePickerDialog dialog = new DatePickerDialog(FinalRegistration.this,android.R.style.Theme_Holo_Light_Dialog_MinWidth,mDateSetListener,year,month,day);
 //                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 //                dialog.show();
 //            }
@@ -66,7 +65,7 @@ public class MRegistration extends AppCompatActivity {
 //        mDateSetListener = new DatePickerDialog.OnDateSetListener() {
 //            @Override
 //            public void onDateSet(DatePicker datePicker, int month, int day, int year) {
-//                Toast.makeText(MRegistration.this, "onDateSet:mm/dd/yyyy:"+ month/day/year, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(FinalRegistration.this, "onDateSet:mm/dd/yyyy:"+ month/day/year, Toast.LENGTH_SHORT).show();
 //                String date =month+"/"+day+"/"+year;
 //                mDisplayDate.setText(date);
 //            }
@@ -91,11 +90,11 @@ public class MRegistration extends AppCompatActivity {
 //
 //                String name = CreatorArray[pos];
 //                if(pos ==0){
-//                    Toast.makeText(MRegistration.this, CreatorArray[pos], Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(FinalRegistration.this, CreatorArray[pos], Toast.LENGTH_SHORT).show();
 //                    BrideDetails.setVisibility(View.GONE);
 //                }
 //                else{
-//                    Toast.makeText(MRegistration.this, CreatorArray[pos], Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(FinalRegistration.this, CreatorArray[pos], Toast.LENGTH_SHORT).show();
 //                    BrideDetails.setVisibility(View.VISIBLE);
 //                }
 //            }
@@ -170,8 +169,8 @@ public class MRegistration extends AppCompatActivity {
 
 
     public void Matro(View view) {
-        startActivity(new Intent(this, Verification.class));
-        Toast.makeText(this, "MRegistration Pressed", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, MiddlePhase.class));
+        Toast.makeText(this, "FinalRegistration Pressed", Toast.LENGTH_SHORT).show();
     }
 
     @Override

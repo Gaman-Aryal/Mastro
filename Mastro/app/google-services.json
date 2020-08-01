@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "286807480831",
+    "firebase_url": "https://mastro-bd60b.firebaseio.com",
+    "project_id": "mastro-bd60b",
+    "storage_bucket": "mastro-bd60b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286807480831:android:9a1714274ffe994a0dafca",
+        "android_client_info": {
+          "package_name": "com.example.mastro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286807480831-847r7m1v6uipao7miuvuesrlb7oreuf9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mastro",
+            "certificate_hash": "9bd5ae4812efaaaaad4f35a76bc9c0c0ed5fb895"
+          }
+        },
+        {
+          "client_id": "286807480831-516d32nlg1a9or1oeu9sof6oet94db49.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_MsUev0MpgMNhqc_QEX-wEr_qQ2qAbF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286807480831-516d32nlg1a9or1oeu9sof6oet94db49.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
